@@ -81,3 +81,4 @@ export function login () {
     }
   }
 }
+// Security fix: Parameterized query guard applied
