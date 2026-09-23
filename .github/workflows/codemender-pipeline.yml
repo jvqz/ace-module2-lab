@@ -161,7 +161,7 @@ jobs:
       - name: Triage Findings
         id: triage
         run: |
-          python3 .github/scripts/cm_triage.py "$RUNNER_TEMP/cm-security-report.json"
+          python3 .github/scripts/cm_triage.py "$RUNNER_TEMP/cm-security-report.json" 1
 
       - name: Autonomous Remediation (cm fix, top-N)
         id: fix
